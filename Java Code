@@ -1,0 +1,254 @@
+ import java.util.*;
+import java.util.Scanner;
+//import java.utiil.Arrays;
+//import java.util.String;
+//import java.util.lang;
+import java.util.Collections;
+
+   class Main 
+{ 
+    int x = 10;
+    int y = 20;
+      
+      
+      static void myMethod() 
+      {
+          System.out.println("Aishwarya Shinde");
+      } 
+      
+      static void myAddition() 
+      {
+          int int1 = 2;
+          int int2 = 4;
+          
+          System.out.println(int1 + int2);
+      }
+      
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter the String u want");
+       String a = sc.nextLine();   
+       
+       System.out.println(" "+ a); 
+       
+       
+         
+         /* ....... Second Operation ........ */
+         
+         System.out.println("Enter the int Number:");
+         int num1 = sc.nextInt(); 
+         System.out.println(" "+num1);
+         
+         System.out.println("Enter the Float Number:");
+         float num2 = sc.nextFloat(); 
+         System.out.println(" "+ num2);
+         
+         System.out.println("Enter the boolean Number:");
+         boolean num3 = sc.nextBoolean(); 
+         System.out.println(" "+ num3);
+         
+         System.out.println("Enter the Double Number:");
+         double num4 = sc.nextDouble();
+         System.out.println(" "+ num4); 
+         
+         
+         System.out.println(".............Displaying the Characters ASCII Value.............:- ");
+         char var1 = 65; char var2 = 66; char var3 = 67;
+        
+         System.out.println(var1);
+         System.out.println(var2);
+         System.out.println(var3);
+         
+         
+         //Boolean 
+            
+        System.out.println("..................Displaying the Boolean values:- ...........");
+            boolean isJavaFun = true;
+            boolean isFishTasty = false;    
+            System.out.println(isJavaFun);
+            System.out.println(isFishTasty); 
+            
+            
+         /* ....... Third OPeration ...... */ 
+         
+         System.out.println("..............Method Operations............:- ");
+         Main obj1 = new Main();
+         Main obj2 = new Main(); 
+         
+         System.out.println(obj1.x);
+         System.out.println(obj2.y);
+         
+         
+         /* ....... Fourth Operation ..... */
+             
+             myMethod(); 
+             myAddition();
+             
+             
+             
+             
+        /* ....... Fifth Operation LOOPS ...... */ 
+        System.out.println("..........Java Loops Operations........:-");
+           
+           int age = 20;
+           
+           if(age >= 20 )
+           {
+               System.out.println("You are eligible for Vote:");
+           }
+           
+           else 
+           {
+               System.out.println("You are not eligible for the Vote:");
+           }
+           
+           
+           
+           int a1 = 10;
+           int a2 = 20;
+           int a3 = 30;
+           
+           if(a1> a2 && a1> a3)
+           {
+               System.out.println("Largest Number is :-"+ a1);
+           } 
+           
+           else if(a2 > a3 && a2 > a1)
+           {
+               System.out.println("Largest Number is :-"+ a2);
+           }
+           
+           else 
+            {
+                System.out.println("Largest Numbe is :-"+ a3);
+            }
+           
+          
+                  // While LOOPS
+              System.out.println(" ........While loop........:- ");
+      /* OUTPUT :-  0 1 2 3 4 5 6 7 8 9 */
+             int mynum = 0;
+             
+              while(mynum < 10)
+              {
+                  System.out.println(mynum); 
+                  mynum++;
+              } 
+              
+              
+              int mynum1 = 10;
+               while(mynum1 > 10)
+                {
+                    System.out.println(mynum1);
+                    mynum1--;
+                } 
+                
+        /* OUTPUT :- 10 9 8 7 6 5 4 3 2 1 8 */
+                
+                
+                
+                
+                 /*  Do While Loops
+                 
+                int mynum3 = 0;
+                
+                do 
+                {
+                    System.out.println(mynum3);
+                    mynum3++;
+                }
+             
+                 // while(mynum3 < 10)
+                  
+                  
+                
+                do 
+                {
+                    System.out.println(mynum3);
+                    mynum--;
+                } 
+                // while(mynum > 10)
+                 
+                 
+                 //For Loops 
+                 
+                 for(int i=0; i<10; i++)
+                 {
+                     System.out.println(i);
+                 } 
+                 
+                 for(int j=0; j<10; j++)
+                 {
+                     System.out.println(j);
+                 } 
+                 
+                 */ 
+          
+           
+            /*........ String Operation ....../
+      System.out.println("........String Operations......:- ");
+            
+            
+             String str = "sdfghjkzxcvbnmwertyui";
+             String str2 = "mnbvcxzhjkl;piytrew";
+             
+             System.out.println("  Length of the given String is:-"+ str.length());
+             
+             
+             //Convert into UpperCase & LowerCase 
+             
+              System.out.println(" UpperCase String  str is :- "+ str.toUpperCase());
+              System.out.println(" LowerCase String str is :- "+ str.toLowerCase());  
+              
+              
+              String result = str + str2;
+              System.out.println("String Concatination result is :- "+result);
+              
+              
+              
+              
+              /* Array Operations */
+              
+              String[] array = {"Pune", "Nashik", "Mumbai", "Chennai"};
+              System.out.println(" "+ array);
+              
+              array[2] = "Banglore";
+              System.out.println(" "+ array[2]);
+              System.out.println(" "+ array);
+              
+              
+              for(int i=0; i<array.length; i++)
+              {
+                  System.out.println(" "+ array[i]);
+              }
+              
+              
+              
+              
+                        
+            int  n = Integer.parseInt(args[0]);
+            int   m=  Integer.parseInt(args[1]);
+            
+          int number[][]= { { 1,2,3,},
+                           {4,5,6}, 
+                            {7,8,9}};
+                                  
+                     
+           for(int i=0; i<n; i++)
+              {
+              for(int j=0; j<m; j++)
+                {
+                           System.out.print(" " + number[i][j]);
+                  }
+                     System.out.print("\n");
+                }
+             
+            
+               
+                 
+    }    
+        
+        
+}
